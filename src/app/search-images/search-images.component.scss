@@ -1,0 +1,55 @@
+$white: #b3c2de;
+
+$accentPrimary: #5347c5;
+$accentSecondary: #887de7;
+
+
+.mT10 {
+    margin-top: 2em;
+}
+
+.imageAlign {
+    height:200px; 
+    width:300px;
+    padding: 0.5em;
+}
+
+.btn-info {
+    background-color: $accentPrimary;
+    color: $white;
+}
+.btn-primary {
+    background-color: $accentSecondary;
+    color: $white;
+}
+.alignDiv {
+    margin: 0px 15px 5px 0px;
+    background-color: $white;
+    border-radius: 5px;
+}
+
+.mybuttonoverlap {
+    position: absolute;
+    z-index: 2;
+    top: 44px;
+    display: none;
+    left: 20px;
+}
+.alignDiv:hover .mybuttonoverlap {
+    display: block;
+}
+
+.mybuttonoverlap {
+    .mB10 {
+        margin-bottom: 1em;
+    }
+}
+.mybuttonoverlap {
+    .btn {
+        width: 120px;
+        line-height: 30px;
+    }
+    .btn:first-child {
+        margin-bottom: 2em;
+    }
+}
