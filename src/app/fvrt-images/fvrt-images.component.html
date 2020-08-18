@@ -23,8 +23,8 @@
 
 <div class="container mT1em">
     <mat-accordion>
-        <mat-expansion-panel *ngFor="let obj of lists;let i = index" (opened)="panelOpenState = true"
-            (closed)="panelOpenState = false">
+        <mat-expansion-panel *ngFor="let obj of lists;let i = index; first as isFirst" (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false" [expanded]="isFirst">
             <mat-expansion-panel-header>
                 <mat-panel-title>
                     {{obj.name}}
