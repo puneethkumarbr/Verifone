@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Used angular material and Bootstap 4 for design.
 NgRx to maintain data in your Angular application as a single source.
 since material and bootsrap are used SCSS is used where ever possible.
+Doesn't support IE 10 and below (https://angular.io/guide/browser-support)
 
 ## Development server
 

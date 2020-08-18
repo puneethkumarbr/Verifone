@@ -39,12 +39,12 @@ export class FvrtImagesComponent implements OnInit {
       this.lists = newOp;
     });
   }
-  downloadFav(obj) {
+  downloadImage(obj) {
     this.toDataURL(obj, function (dataUrl) {
       console.log(dataUrl)
-      var a = document.createElement("a"); //Create <a>
-      a.href = dataUrl; //Image Base64 Goes here
-      a.download = "Image.png"; //File name Here
+      var a = document.createElement("a"); 
+      a.href = dataUrl; 
+      a.download = "Image.png";
       a.click();
     })
   }

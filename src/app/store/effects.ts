@@ -11,7 +11,7 @@ export class storeEffects {
   loadItems$ = this.actions$.pipe(
     ofType(ImageActionTypes.LoadItems),
     mergeMap((action:any) =>
-      this.serv.getSearchResult(action.payload.queryString).pipe(
+      this.serv.getSearchedImages(action.payload.queryString).pipe(
         map(items => {
           return { type: ImageActionTypes.LoadSuccess, payload: {queryString:action.payload.queryString,items:items['results']}};
         }),

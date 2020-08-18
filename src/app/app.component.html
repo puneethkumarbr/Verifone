@@ -307,29 +307,7 @@
 </div>
 
 <div class="container" role="main" style="margin-top: 5em;">
-  <div class="row">
-    <div class="col-8">
-      <router-outlet></router-outlet>
-    </div>
-    <div class="col-4">
-        <mat-form-field class="example-full-width mar-btm">
-          <mat-label>Search for Photos in Flickr</mat-label>
-          <input matInput [(ngModel)]="searchQuery" name="images" (keyup)="searchImages(searchQuery)">
-        </mat-form-field>
-        <br>
-        <mat-card class="example-card mar-btm cardWidth" *ngFor="let image of images">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Title: {{image.title}}</mat-card-title>
-          </mat-card-header>
-          <div class="imgBlock">
-            <a href="{{image.url}}_b.jpg" (click)="saveFile(image.url)">
-              <img mat-card-image src="{{image.url}}_m.jpg" title="{{image.title}}" alt="{{searchQuery}} photos">
-            </a>
-          </div>  
-        </mat-card>
-    </div>
-  </div>
+    <router-outlet></router-outlet>
 </div>
 
 
