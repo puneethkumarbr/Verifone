@@ -1,26 +1,4 @@
 <button [routerLink]="['/searchimages']" mat-raised-button color="primary">Back to home</button>
-<!-- <div class="container">
-    <div class="row mB1em" *ngFor="let obj of lists;let i = index">
-        <div class="col-4" *ngFor="let obj1 of obj.value">
-            <div class="mT1em">
-                <button (click)="edit(i,obj)" mat-raised-button color="primary">Edit</button>
-                <input matInput type="text" ngModel="{{obj.name}}" value="{{obj.name}}" [disabled]>
-                <input matInput type="text" ngModel="{{obj.desc}}" value="{{obj.desc}}" [disabled]>
-            </div>
-            <img src="{{obj1.urls.small}}" (click)="downloadFav(obj1)" class="size">
-        </div>
-    </div>
-</div> -->
-
-<!-- <div *ngFor="let obj of lists;let i = index">
-    <input type="text" ngModel="{{obj.name}}" value="{{obj.name}}" [disabled]>
-    <button (click)="edit(i,obj)" class="btn-info">Edit</button>
-    <div *ngFor="let obj1 of obj.value">
-        <img src="{{obj1.urls.small}}" (click)="downloadFav(obj1)" class="size">
-    </div>
-</div> -->
-
-
 <div class="container mT1em">
     <mat-accordion>
         <mat-expansion-panel *ngFor="let obj of lists;let i = index; first as isFirst" (opened)="panelOpenState = true"

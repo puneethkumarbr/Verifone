@@ -1,7 +1,7 @@
 $white: #b3c2de;
 
-$accentPrimary: #5347c5;
-$accentSecondary: #887de7;
+$primaryColor: #5347c5;
+$secondaryColor: #887de7;
 
 
 .mT10 {
@@ -14,12 +14,12 @@ $accentSecondary: #887de7;
     padding: 0.5em;
 }
 
-.btn-info {
-    background-color: $accentPrimary;
+.btnStyle {
+    background-color: $primaryColor;
     color: $white;
 }
-.btn-primary {
-    background-color: $accentSecondary;
+.btnSecCol {
+    background-color: $secondaryColor;
     color: $white;
 }
 .alignDiv {
@@ -28,23 +28,23 @@ $accentSecondary: #887de7;
     border-radius: 5px;
 }
 
-.mybuttonoverlap {
+.btnOverlay {
     position: absolute;
     z-index: 2;
     top: 44px;
     display: none;
     left: 20px;
 }
-.alignDiv:hover .mybuttonoverlap {
+.alignDiv:hover .btnOverlay {
     display: block;
 }
 
-.mybuttonoverlap {
+.btnOverlay {
     .mB10 {
         margin-bottom: 1em;
     }
 }
-.mybuttonoverlap {
+.btnOverlay {
     .btn {
         width: 120px;
         line-height: 30px;
